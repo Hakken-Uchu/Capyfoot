@@ -57,7 +57,7 @@ if (!isset($_SESSION['name'])) {
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
         <div class="container">
             <a class="navbar-brand text-warning logo navbar-brand h1" id="logo" href="">
-                Capyfoot
+                CapyfooT
             </a>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
