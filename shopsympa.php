@@ -95,7 +95,7 @@ $Emote = $EmoteStatement->fetchAll();
 
                         </li>
                     </ul>
-                    <lottie-player src="https://assets5.lottiefiles.com/temp/lf20_zBfmHv.json"  background="transparent"  speed="1"  style="width: 300px; height: 700px;"  loop  autoplay></lottie-player>
+                    
                 </div>
 
                 <div class="col-lg-9">
