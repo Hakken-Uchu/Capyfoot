@@ -19,12 +19,9 @@ try {
     die($e->getMessage());
 }
 /*prends les donnés directement de la base de donnés et affiche le nom est le mail renseigner*/
-$sqlQuery = "SELECT ue.id, e.* FROM `Emote` as e LEFT  JOIN userEmote as ue ON ue.emote_id = e.id AND ue.user_id = :user_id WHERE type = 'pays'";
+$sqlQuery = "SELECT * FROM `Emote` WHERE type = 'pays'";
 $EmoteStatement = $mysqlConnection->prepare($sqlQuery);
-$field = [
-    'user_id' => $_SESSION['id']
-];
-$EmoteStatement->execute($field);
+$EmoteStatement->execute();
 $Emote = $EmoteStatement->fetchAll();
 
 ?>
@@ -135,7 +132,7 @@ foreach ($Emote as $element) {
 
                                 <p class=" mb-0 text-center ">' . $element['prix'] . ' CC</p>
                                 <div class="d-grid gap-2">
-                                <button class="btn btn-warning text-dark" type="submit" name="id" value="'. $element['id'] .'"> Acheter </button>
+                                <button class="btn btn-warning text-dark" type="submit" name="2""> Acheter </button>
                                 </div>
                             </div>
                         </div>
