@@ -87,7 +87,13 @@ document.location.href = '/login.php';
 </script>";
 }
 
-
+if (isset($_POST['deconnexion']) && ($_POST['deconnexion']) == "deconnexion") {
+    session_destroy();
+    $message_deconnection = "Vous avez bien été déconnecté";
+    echo "<script type='text/javascript'>alert('$message_deconnection');
+document.location.href = '/login.php';
+</script>";
+}
 
 /*lien avec mysql*/
 $mysqlConnection = new PDO('mysql:host=localhost;dbname=capyfoot;charset=utf8', 'root', 'lol');

@@ -122,7 +122,7 @@ echo $_SESSION['capycoin']
 foreach ($Emote as $element) {
     echo '
                         <div class="col-md-4">
-                        <form method="POST" action="php/shop1.php">
+                        <form method="POST" action="php/capyfoot.php">
                         <div class="card mb-4 product-wap">
 
                             <div class="card-body">
